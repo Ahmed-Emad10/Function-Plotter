@@ -123,6 +123,13 @@ clBtn.pack(side=LEFT,padx=50)
 plBtn = Button(window, text="Plot",command = plotting,bg="#7bd500",width=15)
 plBtn.pack(side=LEFT,padx=15)
 
+# Instructions label 
+l4 = Label(window,text="Instructions")
+l4.config(font=('Arial',12,'bold'))
+l4.place(x=120,y=440)
+l5 = Label(window,text="The valid operations are (+,-,*,/,^)\nthe function should be like this format: x^2+10*sin(x)")
+l5.place(x=20,y=460)
+
 # vertical separator
 ttk.Separator(window, orient='vertical').place(x=350,y=305,anchor = CENTER,height=380)
 
