@@ -27,6 +27,7 @@ window.resizable(False, False)
 # validate the function
 def validateFunction(f_of_x,minValue,maxValue):
     f_of_x = f_of_x.replace("^","**")
+    f_of_x = f_of_x.replace(" ","")
     f_of_x = f_of_x.replace("X","x")
     f_of_x = f_of_x.replace("sin","np.sin")
     f_of_x = f_of_x.replace("cos","np.cos")
